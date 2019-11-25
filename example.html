@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <style>
+
+div, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+th, td, p {
+  font-size: 0.8em;
+}
+
+.elementName {
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.attributeContainer {
+  padding: 10px;
+}
+
+.elementContainer {
+  # box-shadow: 1px 1px 10px grey;
+  # padding: 10px; 
+  # border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgba(0,0,0,0.05);
+}
+.elementContainer table {
+  padding-left: 20px;
+}
+
+.bold {
+  font-weight: bold
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s ease-in-out;
+}
+
+.lbl-toggle {
+  font-weight: bold;
+}
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: none
+}
+
+</style>
+  </head>
+  <body>
+    <div class="elementContainer" style="background-color: white;">
+      <h2 class="elementName">bookstore</h2>
+      <table>
+        <tr>
+          <th style="text-align: left;">Adress:</th>
+          <td>Campus grasvik 4</td>
+      
+          <th style="text-align: left;">name:</th>
+          <td>Simons bok</td>
+      </tr>
+      </table>
+      <div class="elementContainer">
+        <h2 class="elementName">Owner</h2>
+        <table>
+          <tr>
+          <th style="text-align: left;">lastName:</th>
+          <td>Nilsson</td>
+      
+          <th style="text-align: left;">Name:</th>
+          <td>Simon</td>
+      </tr>
+        </table>
+      </div>
+      <div class="elementContainer">
+        <h2 class="elementName">book</h2>
+        <table>
+          <tr>
+          <th style="text-align: left;">category:</th>
+          <td>cooking</td>
+      
+          <th style="text-align: left;">year:</th>
+          <td>2005</td>
+      </tr>
+        </table>
+      </div>
+      <div class="elementContainer">
+        <h2 class="elementName">book</h2>
+        <table>
+          <tr>
+          <th style="text-align: left;">category:</th>
+          <td>children</td>
+      
+          <th style="text-align: left;">price:</th>
+          <td>29.99</td>
+      </tr>
+          <tr>
+          <th style="text-align: left;">year:</th>
+          <td>2005</td>
+      
+          <th style="text-align: left;">author:</th>
+          <td>J K. Rowling</td>
+      </tr>
+        </table>
+      </div>
+      <div class="elementContainer">
+        <h2 class="elementName">book</h2>
+        <table>
+          <tr>
+          <th style="text-align: left;">category:</th>
+          <td>web</td>
+      
+          <th style="text-align: left;">price:</th>
+          <td>49.99</td>
+      </tr>
+          <tr>
+          <th style="text-align: left;">year:</th>
+          <td>2003</td>
+      
+          <th style="text-align: left;">author:</th>
+          <td>Vaidyanathan Nagarajan</td>
+      </tr>
+        </table>
+        <div class="elementContainer">
+          <h2 style="padding: 0px; margin: 0px;">author - list</h2>
+          <table style="border-collapse: collapse; border: 1px solid black;">
+            <tr style="border: 1px solid black; padding: 3px;"/>
+            <tr style="border: 1px solid black; padding: 3px;">
+              <p>James McGovern</p>
+            </tr>
+            <tr style="border: 1px solid black; padding: 3px;">
+              <p>Per Bothner</p>
+            </tr>
+            <tr style="border: 1px solid black; padding: 3px;">
+              <p>Kurt Cagle</p>
+            </tr>
+            <tr style="border: 1px solid black; padding: 3px;">
+              <p>James Linn</p>
+            </tr>
+            <tr style="border: 1px solid black; padding: 3px;">
+              <p>Vaidyanathan Nagarajan</p>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="elementContainer">
+        <h2 class="elementName">book</h2>
+        <table>
+          <tr>
+          <th style="text-align: left;">category:</th>
+          <td>web</td>
+      
+          <th style="text-align: left;">price:</th>
+          <td>39.95</td>
+      </tr>
+          <tr>
+          <th style="text-align: left;">year:</th>
+          <td>2003</td>
+      
+          <th style="text-align: left;">cover:</th>
+          <td>paperback</td>
+      </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
