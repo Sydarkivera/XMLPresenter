@@ -2,6 +2,8 @@
 
 A simple python script that converts an arbitrary XML file into a HTML file with some formatting that makes the content of the XML file easier to understand.
 
+[Example HTML](http://htmlpreview.github.io/?https://github.com/Sydarkivera/XMLPresenter/blob/master/example.html)
+
 ## Getting Started
 
 The project is run using python version and it requires the library lxml (see requirements.txt).
