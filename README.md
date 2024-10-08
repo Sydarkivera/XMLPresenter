@@ -1,3 +1,5 @@
+# This repository has been archived by Sydarkivera
+
 # XML Presenter (Convert complicated XML files to easily viewed html)
 
 A simple python script that converts an arbitrary XML file into a HTML file with some formatting that makes the content of the XML file easier to understand.
